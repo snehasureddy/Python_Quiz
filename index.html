@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Test your knowledge with this multiple-choice quiz."
+    />
+    <title>Multiple-Choice Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="quiz" aria-labelledby="quiz-title">
+      <header class="quiz__header">
+        <h1 id="quiz-title">Quick Quiz</h1>
+        <p id="score" class="quiz__score" aria-live="polite">Score: 0</p>
+      </header>
+
+      <section class="quiz__content" aria-labelledby="question">
+        <p id="question-number" class="quiz__question-number">Question 1</p>
+        <h2 id="question" class="quiz__question">
+          Your question will appear here.
+        </h2>
+
+        <div
+          id="answer-options"
+          class="quiz__answers"
+          role="group"
+          aria-label="Answer options"
+        >
+          <button class="quiz__answer" type="button" data-answer="0">
+            Answer option 1
+          </button>
+          <button class="quiz__answer" type="button" data-answer="1">
+            Answer option 2
+          </button>
+          <button class="quiz__answer" type="button" data-answer="2">
+            Answer option 3
+          </button>
+          <button class="quiz__answer" type="button" data-answer="3">
+            Answer option 4
+          </button>
+        </div>
+
+        <p id="feedback" class="quiz__feedback" aria-live="polite"></p>
+
+        <div class="quiz__controls">
+          <button id="next-question" type="button" disabled>
+            Next Question
+          </button>
+          <button id="restart-quiz" type="button">Restart Quiz</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
